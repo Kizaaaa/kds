@@ -8,7 +8,17 @@ Penelitian ini mengembangkan model Agent-Based Modeling (ABM) untuk mensimulasik
 
 ## Cara Menjalankan
 
-Cukup jalankan file `main.py`
+1. clone repository ini
+
+```sh
+git clone https://github.com/Kizaaaa/kds.git
+```
+
+2. Cukup jalankan file `main.py`
+
+```sh
+py main.py
+```
 
 ## Anggota Kelompok
 
