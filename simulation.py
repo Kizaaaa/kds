@@ -183,7 +183,7 @@ class SimulationViewer:
         if self.playing and self.current_step < self.max_step:
             self.current_step += 1
             self.update_plot()
-            self.animation_timer = self.fig.canvas.new_timer(interval=500)
+            self.animation_timer = self.fig.canvas.new_timer(interval=200)
             self.animation_timer.single_shot = True
             self.animation_timer.add_callback(self.animate_step)
             self.animation_timer.start()

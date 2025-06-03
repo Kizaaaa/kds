@@ -133,18 +133,18 @@ def start_gui():
     defaults = {
         "Ukuran Laut": 50,
         "Banyak Mangsa di Awal": 250,
-        "Banyak Predator di Awal": 200,
+        "Banyak Predator di Awal": 100,
         "Waktu untuk Reproduksi Mangsa": 5,
         "Waktu untuk Reproduksi Predator": 8,
-        "Energi Awal Predator": 20,
-        "Energi yang Didapat Saat Makan": 15,
+        "Energi Awal Predator": 25,
+        "Energi yang Didapat Saat Makan": 20,
         "Energi Hilang Dalam Satu Waktu": 1,
-        "Waktu Simulasi Maksimum": 100
+        "Waktu Simulasi Maksimum": 300
     }
     
     # Float parameters (for food density)
     float_defaults = {
-        "Kepadatan Makanan (0.0-1.0)": 0.1
+        "Kepadatan Makanan (0.0-1.0)": 0.5
     }
 
     # Parameter descriptions for tooltips
@@ -263,12 +263,6 @@ def start_gui():
 
     # Add navigation mode checkbox with enhanced styling
     nav_var = tk.BooleanVar(value=True)
-    nav_checkbox = ttk.Checkbutton(scrollable_frame, 
-                                  text="🧭 Aktifkan Mode Navigasi\n    (bisa maju/mundur dalam simulasi)", 
-                                  variable=nav_var, 
-                                  style='Ocean.TCheckbutton')
-    nav_checkbox.grid(row=current_row, column=0, columnspan=2, pady=15, sticky="w")
-    current_row += 1
 
     # Add informational text
     info_text = tk.Label(scrollable_frame,
